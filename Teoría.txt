@@ -1,0 +1,5 @@
+TESTING:
+    1. Unit testing: small portions of code
+        -local hardhat
+        -forked hardhat
+    2. Staging/integrated test: test the whole code. The last stop before going to the mainnet.
