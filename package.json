@@ -1,4 +1,7 @@
 {
+  "name":"hardhat-fund-me",
+  "author": "martiubi",
+  "version":"1.0.0"
   "devDependencies": {
     "@chainlink/contracts": "^0.6.1",
     "@ethersproject/abi": "^5.4.7",
@@ -20,5 +23,13 @@
     "prettier-plugin-solidity": "^1.1.2",
     "solidity-coverage": "^0.8.2",
     "typechain": "^8.1.0"
+  },
+  "scripts": {
+    "test":"yarn hardhat test",
+    "test:staging":"yarn hardhat test --network goerli",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix":"yarn solhint 'contracts/*.sol' --fix",
+    "format": "yarn prettier -write",
+    "coverage": "yarn hardhat coverage"
   }
 }
